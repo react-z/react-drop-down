@@ -1,6 +1,6 @@
 ## react-drop-down
 
-[![npm version](https://badge.fury.io/js/react-social-buttons.svg)](https://badge.fury.io/js/react-social-buttons)
+[![npm version](https://badge.fury.io/js/react-drop-down.svg)](https://badge.fury.io/js/react-drop-down)
 
 a simple drop down component
 
