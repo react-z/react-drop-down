@@ -1,14 +1,19 @@
+var path = require('path');
+
 module.exports = {
-  devtool: "source-map",
-  entry: './example/js/main.js',
+  context: __dirname,
+  entry: { app: './example.js' },
   output: {
-    filename: 'bundle.js',
-    path: './example/public/',
+    filename: './example/public/bundle.js',
     publicPath: 'public'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader' }
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel'
+      }
     ]
   }
 };

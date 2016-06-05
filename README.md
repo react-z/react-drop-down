@@ -10,16 +10,22 @@ a simple drop down component
 npm install react-drop-down --save
 ```
 
+## Versions
+
+#### `1.0.0` uses React `^0.14.0`
+
+#### `1.0.1` uses React `^0.15.1`
+
 ## Use
 
 ``` js
+import Dropdown from 'react-drop-down'
+import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
-import { render } from 'react-dom'
-import DropDown from 'react-drop-down'
 
-class App extends React.Component {
+class TestComponent extends Component {
 
- constructor(props) {
+  constructor(props) {
     super(props)
     this.state = { value: 'reactjs'}
   }
@@ -29,43 +35,30 @@ class App extends React.Component {
     console.log(e)
   }
 
-  render() {
+  render () {
 
     return (
       <div>
-
-        <DropDown value={this.state.value}
+        <Dropdown value={this.state.value}
                   onChange={this.handleChange.bind(this)}
                   options={[ 'reactjs', 'angular2' ]} />
-
       </div>
     )
   }
 }
 
-render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <TestComponent />,
+  document.getElementById('root')
+)
 ```
 
 ## Development
 
-**build src to lib**
-
-    npm run build
-
-**run tests**
-
     npm install
+    npm run build
     npm test
-
-**to run tests in the browser...**
-
-`npm install webpack -g`
-
-compile test.js to a bundle with webpack
-
-	webpack ./test/test.js ./test/test-bundle.js
-
-open test.html to view the tests in the browser
+    npm start
 
 ## License
 

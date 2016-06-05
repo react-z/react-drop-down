@@ -1,10 +1,10 @@
+import Dropdown from '../lib/Dropdown' // 'react-drop-down'
+import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
-import { render } from 'react-dom'
-import DropDown from '../../lib/index.js' /* from 'react-drop-down' in your app */
 
-class App extends React.Component {
+class TestComponent extends Component {
 
- constructor(props) {
+  constructor(props) {
     super(props)
     this.state = { value: 'reactjs'}
   }
@@ -14,19 +14,19 @@ class App extends React.Component {
     console.log(e)
   }
 
-  render() {
+  render () {
 
     return (
       <div>
-
-      	<DropDown value={this.state.value}
+        <Dropdown value={this.state.value}
                   onChange={this.handleChange.bind(this)}
                   options={[ 'reactjs', 'angular2' ]} />
-
       </div>
     )
   }
 }
 
-
-render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <TestComponent />,
+  document.getElementById('root')
+)

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
-export default class DropDown extends Component {
+export default class Dropdown extends Component {
 
   render() {
     const { value, onChange, options } = this.props
@@ -19,7 +19,7 @@ export default class DropDown extends Component {
   }
 }
 
-DropDown.propTypes = {
+Dropdown.propTypes = {
   options: PropTypes.arrayOf( PropTypes.string.isRequired).isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
