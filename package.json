@@ -2,7 +2,7 @@
   "name": "react-drop-down",
   "version": "1.0.1",
   "description": "a simple drop down component",
-  "main": "lib/index.js",
+  "main": "lib/Dropdown.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/StevenIseki/react-drop-down.git"
