@@ -13,7 +13,7 @@ npm install react-drop-down --save
 ## Use
 
 ``` jsx
-import Dropdown from '../lib/Dropdown' // 'react-drop-down'
+import Dropdown from 'react-drop-down'
 import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
 
