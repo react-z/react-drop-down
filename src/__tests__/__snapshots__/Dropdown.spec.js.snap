@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown renders correctly and matches snapshot 1`] = `
+<select
+  onChange={[Function]}
+  value="reactjs"
+>
+  <option
+    value="reactjs"
+  >
+    reactjs
+  </option>
+  <option
+    value="angular2"
+  >
+    angular2
+  </option>
+</select>
+`;
