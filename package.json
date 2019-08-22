@@ -1,6 +1,6 @@
 {
   "name": "react-drop-down",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a simple drop down component",
   "main": "lib/Dropdown.js",
   "repository": {
